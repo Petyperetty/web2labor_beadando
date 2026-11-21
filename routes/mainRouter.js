@@ -16,6 +16,9 @@ router.post("/register", controller.registerPost);
 router.get("/login", controller.loginGet);
 router.post("/login", controller.loginPost);
 router.get("/logout", controller.logout);
-router.get("/user", isLoggedIn, controller.userIndex);
-router.get("/admin", isAdmin, controller.adminIndex);
+router.get("/mozik", controller.allMozi);
+router.get("/filmek/:moziazon", controller.allFilm);
+router.get("/uzenetek", controller.uzenetek);
+router.get("/diagram", controller.diagram);
+
 module.exports = router;
