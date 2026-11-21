@@ -1,0 +1,1388 @@
+[
+  {
+    "fkod": 1,
+    "filmcim": "Ágnes öcsénk",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "német",
+    "mufaj": "dráma",
+    "hossz": 115
+  },
+  {
+    "fkod": 2,
+    "filmcim": "Az állomásfőnök",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "dráma",
+    "hossz": 88
+  },
+  {
+    "fkod": 3,
+    "filmcim": "Álmodozók",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "angol-francia-olasz",
+    "mufaj": "dráma",
+    "hossz": 110
+  },
+  {
+    "fkod": 4,
+    "filmcim": "Amelie csodálatos élete",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "francia-német",
+    "mufaj": "vígjáték",
+    "hossz": 117
+  },
+  {
+    "fkod": 5,
+    "filmcim": "Annie Hall",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "vígjáték",
+    "hossz": 89
+  },
+  {
+    "fkod": 6,
+    "filmcim": "Anyám a lányokat szereti",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "spanyol",
+    "mufaj": "vígjáték",
+    "hossz": 96
+  },
+  {
+    "fkod": 7,
+    "filmcim": "Anyátlanok",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "japán",
+    "mufaj": "játékfilm",
+    "hossz": 141
+  },
+  {
+    "fkod": 8,
+    "filmcim": "Apokalipszis most - rendezői változat",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "dráma",
+    "hossz": 202
+  },
+  {
+    "fkod": 9,
+    "filmcim": "\"Apokalipszis most I-II;\"",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "dráma",
+    "hossz": 159
+  },
+  {
+    "fkod": 10,
+    "filmcim": "Arizonai álmodozók",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "dráma",
+    "hossz": 135
+  },
+  {
+    "fkod": 11,
+    "filmcim": "Bábok",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "japán",
+    "mufaj": "dráma",
+    "hossz": 109
+  },
+  {
+    "fkod": 12,
+    "filmcim": "Beszélj hozzá!",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "spanyol",
+    "mufaj": "dráma",
+    "hossz": 109
+  },
+  {
+    "fkod": 13,
+    "filmcim": "Bin-jip - Lopakodó lelkek",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "dél-koreai-japán",
+    "mufaj": "dráma",
+    "hossz": 88
+  },
+  {
+    "fkod": 14,
+    "filmcim": "A bíró és a hóhér",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "NSZK-olasz",
+    "mufaj": "krimi",
+    "hossz": 90
+  },
+  {
+    "fkod": 15,
+    "filmcim": "Broken Flowers - Hervadó virágok",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai-francia",
+    "mufaj": "vígjáték",
+    "hossz": 105
+  },
+  {
+    "fkod": 16,
+    "filmcim": "A bűvös körhinta",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "francia",
+    "mufaj": "animációs",
+    "hossz": 85
+  },
+  {
+    "fkod": 17,
+    "filmcim": "Cápasrác és Lávalány kalandjai",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "kalandfilm",
+    "hossz": 112
+  },
+  {
+    "fkod": 18,
+    "filmcim": "Charlie és a csokigyár",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai-angol",
+    "mufaj": "vígjáték",
+    "hossz": 106
+  },
+  {
+    "fkod": 19,
+    "filmcim": "Che Guevara: A motoros naplója",
+    "szines": false,
+    "szinkron": "fel",
+    "szarmazas": "amerikai-angol-argentin-német",
+    "mufaj": "dráma",
+    "hossz": 128
+  },
+  {
+    "fkod": 20,
+    "filmcim": "Csak szex és más semmi",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "vígjáték",
+    "hossz": 93
+  },
+  {
+    "fkod": 21,
+    "filmcim": "Csodacsibe",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "animációs",
+    "hossz": 77
+  },
+  {
+    "fkod": 22,
+    "filmcim": "Csodálatos Júlia",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "kanadai",
+    "mufaj": "",
+    "hossz": 104
+  },
+  {
+    "fkod": 23,
+    "filmcim": "Datolya",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "belga-francia-tunéziai",
+    "mufaj": "",
+    "hossz": 82
+  },
+  {
+    "fkod": 24,
+    "filmcim": "Dig! - Ezt kapd ki!",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "dokumentum",
+    "hossz": 107
+  },
+  {
+    "fkod": 25,
+    "filmcim": "A diktátor",
+    "szines": false,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "filmszatíra",
+    "hossz": 120
+  },
+  {
+    "fkod": 26,
+    "filmcim": "Dogville - A menedék",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "dán-svéd-norvég-német-finn-olasz-japán-angol-amerikai",
+    "mufaj": "dráma",
+    "hossz": 177
+  },
+  {
+    "fkod": 27,
+    "filmcim": "Domino",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "francia-amerikai",
+    "mufaj": "akció",
+    "hossz": 127
+  },
+  {
+    "fkod": 28,
+    "filmcim": "\"Durr; durr és csók\"",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "thriller",
+    "hossz": 103
+  },
+  {
+    "fkod": 29,
+    "filmcim": "Edukators",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "német-osztrák",
+    "mufaj": "játékfilm",
+    "hossz": 127
+  },
+  {
+    "fkod": 30,
+    "filmcim": "Egy cipőben",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "vígjáték",
+    "hossz": 130
+  },
+  {
+    "fkod": 31,
+    "filmcim": "Egy hulla, egy falafel és a többiek…",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "ausztrál-olasz",
+    "mufaj": "vígjáték",
+    "hossz": 107
+  },
+  {
+    "fkod": 32,
+    "filmcim": "Egy szoknya, egy nadrág",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "vígjáték",
+    "hossz": 95
+  },
+  {
+    "fkod": 33,
+    "filmcim": "Elveszett jelentés",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai-japán",
+    "mufaj": "dráma",
+    "hossz": 102
+  },
+  {
+    "fkod": 34,
+    "filmcim": "Én, Pán Péter",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "angol-amerikai",
+    "mufaj": "dráma",
+    "hossz": 106
+  },
+  {
+    "fkod": 35,
+    "filmcim": "Eros",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai-olasz-hongkongi-kínai-francia-luxemburgi-angol",
+    "mufaj": "dráma",
+    "hossz": 104
+  },
+  {
+    "fkod": 36,
+    "filmcim": "Fej vagy írás",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "vígjáték",
+    "hossz": 90
+  },
+  {
+    "fkod": 37,
+    "filmcim": "Fekete Kefe",
+    "szines": false,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "vígjáték",
+    "hossz": 80
+  },
+  {
+    "fkod": 38,
+    "filmcim": "A fény ösvényei",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "dráma",
+    "hossz": 89
+  },
+  {
+    "fkod": 39,
+    "filmcim": "Futball faktor",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "angol",
+    "mufaj": "dráma",
+    "hossz": 91
+  },
+  {
+    "fkod": 40,
+    "filmcim": "Fűrész 2",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "thriller",
+    "hossz": 93
+  },
+  {
+    "fkod": 41,
+    "filmcim": "Galaxis útikalauz stopposoknak",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai-angol",
+    "mufaj": "vígjáték",
+    "hossz": 110
+  },
+  {
+    "fkod": 42,
+    "filmcim": "Garfield",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "vígjáték",
+    "hossz": 81
+  },
+  {
+    "fkod": 43,
+    "filmcim": "Genezis",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "francia-olasz",
+    "mufaj": "természetfilm",
+    "hossz": 81
+  },
+  {
+    "fkod": 44,
+    "filmcim": "Getno",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "játékfilm",
+    "hossz": 95
+  },
+  {
+    "fkod": 45,
+    "filmcim": "Grimm",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "cseh-amerikai",
+    "mufaj": "fantasy",
+    "hossz": 118
+  },
+  {
+    "fkod": 46,
+    "filmcim": "Ha igaz volna…",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "vígjáték",
+    "hossz": 95
+  },
+  {
+    "fkod": 47,
+    "filmcim": "A halott menyasszony",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "angol",
+    "mufaj": "animációs",
+    "hossz": 78
+  },
+  {
+    "fkod": 48,
+    "filmcim": "Harry Potter és a Tűz Serlege",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "fantasy",
+    "hossz": 157
+  },
+  {
+    "fkod": 49,
+    "filmcim": "Hawaii, Oslo",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "dán-svéd-norvég",
+    "mufaj": "dráma",
+    "hossz": 125
+  },
+  {
+    "fkod": 50,
+    "filmcim": "A hetedik nap",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "spanyol",
+    "mufaj": "dráma",
+    "hossz": 103
+  },
+  {
+    "fkod": 51,
+    "filmcim": "Hétköznapi mennyország",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "svéd",
+    "mufaj": "dráma",
+    "hossz": 130
+  },
+  {
+    "fkod": 52,
+    "filmcim": "Híd a Kwai folyón",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "angol-amerikai",
+    "mufaj": "dráma",
+    "hossz": 161
+  },
+  {
+    "fkod": 53,
+    "filmcim": "Hideg csontok",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "spanyol",
+    "mufaj": "thriller",
+    "hossz": 100
+  },
+  {
+    "fkod": 54,
+    "filmcim": "Holdfényév",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "dráma",
+    "hossz": 117
+  },
+  {
+    "fkod": 55,
+    "filmcim": "Hölgyek levendulában",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "angol",
+    "mufaj": "dráma",
+    "hossz": 103
+  },
+  {
+    "fkod": 56,
+    "filmcim": "Hős",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "hongkongi",
+    "mufaj": "",
+    "hossz": 96
+  },
+  {
+    "fkod": 57,
+    "filmcim": "A hősök nem pihennek",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "francia-osztrák",
+    "mufaj": "dráma",
+    "hossz": 104
+  },
+  {
+    "fkod": 58,
+    "filmcim": "Human Traffic",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "angol-ír",
+    "mufaj": "vígjáték",
+    "hossz": 99
+  },
+  {
+    "fkod": 59,
+    "filmcim": "Hurrá, nyaralunk!",
+    "szines": false,
+    "szinkron": "mb",
+    "szarmazas": "szovjet",
+    "mufaj": "ifjúsági",
+    "hossz": 74
+  },
+  {
+    "fkod": 60,
+    "filmcim": "Az igazi Mikulás",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "játékfilm",
+    "hossz": 90
+  },
+  {
+    "fkod": 61,
+    "filmcim": "Az igazság fogságában",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "kanadai",
+    "mufaj": "",
+    "hossz": 108
+  },
+  {
+    "fkod": 62,
+    "filmcim": "Az ígéret - Fényes nappal történt",
+    "szines": false,
+    "szinkron": "fel",
+    "szarmazas": "NSZK-svájci-spanyol",
+    "mufaj": "krimi",
+    "hossz": 90
+  },
+  {
+    "fkod": 63,
+    "filmcim": "Az ígéret megszállottja",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "dráma",
+    "hossz": 124
+  },
+  {
+    "fkod": 64,
+    "filmcim": "Intimitás",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "francia-angol-német-spanyol",
+    "mufaj": "dráma",
+    "hossz": 115
+  },
+  {
+    "fkod": 65,
+    "filmcim": "Isten városa",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "brazil-francia",
+    "mufaj": "dráma",
+    "hossz": 130
+  },
+  {
+    "fkod": 66,
+    "filmcim": "Játszik még a szív",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "angol",
+    "mufaj": "vígjáték",
+    "hossz": 100
+  },
+  {
+    "fkod": 67,
+    "filmcim": "Johanna",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "operafilm",
+    "hossz": 90
+  },
+  {
+    "fkod": 68,
+    "filmcim": "Kairó bíbor rózsája",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "vígjáték",
+    "hossz": 84
+  },
+  {
+    "fkod": 69,
+    "filmcim": "Kávé és cigaretta",
+    "szines": false,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "zenés",
+    "hossz": 95
+  },
+  {
+    "fkod": 70,
+    "filmcim": "Kész cirkusz",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "vígjáték",
+    "hossz": 74
+  },
+  {
+    "fkod": 71,
+    "filmcim": "A kilencedik nap",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "német-luxemburgi",
+    "mufaj": "dráma",
+    "hossz": 98
+  },
+  {
+    "fkod": 72,
+    "filmcim": "King Kong",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "új-zélandi",
+    "mufaj": "",
+    "hossz": 188
+  },
+  {
+    "fkod": 73,
+    "filmcim": "Kontroll",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "thriller",
+    "hossz": 102
+  },
+  {
+    "fkod": 74,
+    "filmcim": "Kőkemény család",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "vígjáték",
+    "hossz": 104
+  },
+  {
+    "fkod": 75,
+    "filmcim": "A közvetítő",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "dokumentum",
+    "hossz": 89
+  },
+  {
+    "fkod": 76,
+    "filmcim": "Kulcsár & Haverok",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "",
+    "hossz": 80
+  },
+  {
+    "fkod": 77,
+    "filmcim": "Kutyaszorítóban",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "thriller",
+    "hossz": 99
+  },
+  {
+    "fkod": 78,
+    "filmcim": "Kutyátlanok kíméljenek",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "vígjáték",
+    "hossz": 98
+  },
+  {
+    "fkod": 79,
+    "filmcim": "Lakótársat keresünk",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "francia-spanyol",
+    "mufaj": "vígjáték",
+    "hossz": 120
+  },
+  {
+    "fkod": 80,
+    "filmcim": "Leány gyöngy fülbevalóval",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "angol-luxemburgi",
+    "mufaj": "dráma",
+    "hossz": 95
+  },
+  {
+    "fkod": 81,
+    "filmcim": "Légcsavar",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "thriller",
+    "hossz": 98
+  },
+  {
+    "fkod": 82,
+    "filmcim": "A legtöbb ember Kínában él…",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "norvég",
+    "mufaj": "dráma",
+    "hossz": 82
+  },
+  {
+    "fkod": 83,
+    "filmcim": "Lélektől lélekig",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "francia-dél-afrikai-angol",
+    "mufaj": "kalandfilm",
+    "hossz": 122
+  },
+  {
+    "fkod": 84,
+    "filmcim": "Madagaszkár",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "animációs",
+    "hossz": 80
+  },
+  {
+    "fkod": 85,
+    "filmcim": "Magyar vándor",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "vígjáték",
+    "hossz": 110
+  },
+  {
+    "fkod": 86,
+    "filmcim": "Manderlay",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "dán-svéd-francia-német-amerikai",
+    "mufaj": "dráma",
+    "hossz": 139
+  },
+  {
+    "fkod": 87,
+    "filmcim": "Manhattan",
+    "szines": false,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "vígjáték",
+    "hossz": 96
+  },
+  {
+    "fkod": 88,
+    "filmcim": "Maszájok",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "francia",
+    "mufaj": "dráma",
+    "hossz": 94
+  },
+  {
+    "fkod": 89,
+    "filmcim": "Még mindig lakótársat keresünk",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "francia-angol",
+    "mufaj": "vígjáték",
+    "hossz": 125
+  },
+  {
+    "fkod": 90,
+    "filmcim": "Melinda és Melinda",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "vígjáték",
+    "hossz": 100
+  },
+  {
+    "fkod": 91,
+    "filmcim": "Mennyország most",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "francia-német-holland-izrael",
+    "mufaj": "",
+    "hossz": 90
+  },
+  {
+    "fkod": 92,
+    "filmcim": "Mezítlábas szerelem",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "német",
+    "mufaj": "vígjáték",
+    "hossz": 110
+  },
+  {
+    "fkod": 93,
+    "filmcim": "Mi a csudát tudunk a világról?",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "játékfilm",
+    "hossz": 108
+  },
+  {
+    "fkod": 94,
+    "filmcim": "Mint egy angyal",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "francia-olasz",
+    "mufaj": "dráma",
+    "hossz": 110
+  },
+  {
+    "fkod": 95,
+    "filmcim": "Monsieur Ibrahim és a Korán virágai",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "francia-török",
+    "mufaj": "dráma",
+    "hossz": 94
+  },
+  {
+    "fkod": 96,
+    "filmcim": "Naqoyqatsi - Erőszakos világ",
+    "szines": true,
+    "szinkron": "szöv nélkül",
+    "szarmazas": "amerikai",
+    "mufaj": "filmesszé",
+    "hossz": 89
+  },
+  {
+    "fkod": 97,
+    "filmcim": "Narnia Krónikái - Az oroszlán, a boszorkány és a ruhásszekrény",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai-új-zélandi",
+    "mufaj": "fantasy",
+    "hossz": 140
+  },
+  {
+    "fkod": 98,
+    "filmcim": "Nesze neked, Pete Tong!",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "angol-kanadai",
+    "mufaj": "vígjáték",
+    "hossz": 90
+  },
+  {
+    "fkod": 99,
+    "filmcim": "Nézz balra, ott egy svéd!",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "dán",
+    "mufaj": "vígjáték",
+    "hossz": 90
+  },
+  {
+    "fkod": 100,
+    "filmcim": "Nyomorultak",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "francia-olasz-NDK",
+    "mufaj": "dráma",
+    "hossz": 225
+  },
+  {
+    "fkod": 101,
+    "filmcim": "Oldboy",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "dél-koreai",
+    "mufaj": "thriller",
+    "hossz": 120
+  },
+  {
+    "fkod": 102,
+    "filmcim": "Az operaház fantomja",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "amerikai",
+    "mufaj": "musical",
+    "hossz": 92
+  },
+  {
+    "fkod": 103,
+    "filmcim": "Ördögűzés Emily Rose üdvéért",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "horror",
+    "hossz": 119
+  },
+  {
+    "fkod": 104,
+    "filmcim": "Pata-csata",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "dél-afrikai-amerikai",
+    "mufaj": "vígjáték",
+    "hossz": 94
+  },
+  {
+    "fkod": 105,
+    "filmcim": "Pingvinek vándorlása",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "francia",
+    "mufaj": "dokumentum",
+    "hossz": 85
+  },
+  {
+    "fkod": 106,
+    "filmcim": "A pityergő teve története",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "német-mongol",
+    "mufaj": "dokumentum",
+    "hossz": 87
+  },
+  {
+    "fkod": 107,
+    "filmcim": "Ponyvaregény - Pulp Fiction",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "filmszatíra",
+    "hossz": 150
+  },
+  {
+    "fkod": 108,
+    "filmcim": "Porcelánbaba",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "dráma",
+    "hossz": 74
+  },
+  {
+    "fkod": 109,
+    "filmcim": "Rap, Revü, Rómeó",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "vígjáték",
+    "hossz": 82
+  },
+  {
+    "fkod": 110,
+    "filmcim": "A Rashevski tangó",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "belga-luxemburgi-francia",
+    "mufaj": "",
+    "hossz": 90
+  },
+  {
+    "fkod": 111,
+    "filmcim": "Rekonstrukció",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "dán",
+    "mufaj": "dráma",
+    "hossz": 88
+  },
+  {
+    "fkod": 112,
+    "filmcim": "A repülő tőrök klánja",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "kínai-hongkongi",
+    "mufaj": "akció",
+    "hossz": 111
+  },
+  {
+    "fkod": 113,
+    "filmcim": "A rövidek éjszakája",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "francia-angol-spanyol-dán",
+    "mufaj": "rövidfilm",
+    "hossz": 68
+  },
+  {
+    "fkod": 114,
+    "filmcim": "Segítség, hal lettem!",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "dán-ír-német",
+    "mufaj": "animációs",
+    "hossz": 80
+  },
+  {
+    "fkod": 115,
+    "filmcim": "Senki nem tud semmit",
+    "szines": false,
+    "szinkron": "mb",
+    "szarmazas": "csehszlovák",
+    "mufaj": "vígjáték",
+    "hossz": 70
+  },
+  {
+    "fkod": 116,
+    "filmcim": "Sin City",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "akció",
+    "hossz": 124
+  },
+  {
+    "fkod": 117,
+    "filmcim": "Sóhajtenger - Kuba",
+    "szines": false,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "rövidfilm",
+    "hossz": 5
+  },
+  {
+    "fkod": 118,
+    "filmcim": "Egy sorozatgyilkos nyara",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "dráma",
+    "hossz": 136
+  },
+  {
+    "fkod": 119,
+    "filmcim": "A sötétség útja - Mulholland Drive",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai-francia",
+    "mufaj": "dráma",
+    "hossz": 141
+  },
+  {
+    "fkod": 120,
+    "filmcim": "Stalker",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "szovjet-NSZK",
+    "mufaj": "sci-fi",
+    "hossz": 160
+  },
+  {
+    "fkod": 121,
+    "filmcim": "Super Size Me",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "dokumentum",
+    "hossz": 96
+  },
+  {
+    "fkod": 122,
+    "filmcim": "Szamszára",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "indiai-német-francia-olasz",
+    "mufaj": "dráma",
+    "hossz": 140
+  },
+  {
+    "fkod": 123,
+    "filmcim": "Szent Lajos király hídja",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "spanyol",
+    "mufaj": "",
+    "hossz": 120
+  },
+  {
+    "fkod": 124,
+    "filmcim": "A szenvedélyek labirintusa",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "spanyol",
+    "mufaj": "játékfilm",
+    "hossz": 100
+  },
+  {
+    "fkod": 125,
+    "filmcim": "Szerelmem nyara",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "angol",
+    "mufaj": "dráma",
+    "hossz": 86
+  },
+  {
+    "fkod": 126,
+    "filmcim": "Szeress, ha mersz",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "francia-belga",
+    "mufaj": "",
+    "hossz": 93
+  },
+  {
+    "fkod": 127,
+    "filmcim": "Szex, szerelem, olaszok",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "olasz-svájci-angol",
+    "mufaj": "vígjáték",
+    "hossz": 125
+  },
+  {
+    "fkod": 128,
+    "filmcim": "Szőke Kóla",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "vígjáték",
+    "hossz": 96
+  },
+  {
+    "fkod": 129,
+    "filmcim": "Szürke, Mercivel",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "jugoszláv-német-szlovén-szerb",
+    "mufaj": "vígjáték",
+    "hossz": 95
+  },
+  {
+    "fkod": 130,
+    "filmcim": "Szürkület",
+    "szines": false,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "krimi",
+    "hossz": 105
+  },
+  {
+    "fkod": 131,
+    "filmcim": "Táncos a sötétben",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "dán-svéd-francia",
+    "mufaj": "dráma",
+    "hossz": 134
+  },
+  {
+    "fkod": 132,
+    "filmcim": "Tangó és tulipán",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "olasz-svájci",
+    "mufaj": "vígjáték",
+    "hossz": 112
+  },
+  {
+    "fkod": 133,
+    "filmcim": "Tapló télapó",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai-német",
+    "mufaj": "vígjáték",
+    "hossz": 98
+  },
+  {
+    "fkod": 134,
+    "filmcim": "Tavasz, Nyár, Ősz, Tél és Tavasz",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "dél-koreai-német",
+    "mufaj": "dráma",
+    "hossz": 99
+  },
+  {
+    "fkod": 135,
+    "filmcim": "Tavasz van",
+    "szines": false,
+    "szinkron": "fel",
+    "szarmazas": "olasz",
+    "mufaj": "dráma",
+    "hossz": 90
+  },
+  {
+    "fkod": 136,
+    "filmcim": "Twist Olivér",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "angol-cseh-francia-olasz",
+    "mufaj": "dráma",
+    "hossz": 130
+  },
+  {
+    "fkod": 137,
+    "filmcim": "Utazások egy szerzetessel",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "dokumentum",
+    "hossz": 65
+  },
+  {
+    "fkod": 138,
+    "filmcim": "Ütközések",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "amerikai-német",
+    "mufaj": "dráma",
+    "hossz": 113
+  },
+  {
+    "fkod": 139,
+    "filmcim": "Üvegfal",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "játékfilm",
+    "hossz": 87
+  },
+  {
+    "fkod": 140,
+    "filmcim": "Üvegtigris",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "vígjáték",
+    "hossz": 100
+  },
+  {
+    "fkod": 141,
+    "filmcim": "Vad galamb",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "angol",
+    "mufaj": "animációs",
+    "hossz": 76
+  },
+  {
+    "fkod": 142,
+    "filmcim": "A vágy törvénye",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "spanyol",
+    "mufaj": "dráma",
+    "hossz": 102
+  },
+  {
+    "fkod": 143,
+    "filmcim": "Van élet a halál előtt?",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "dokumentum",
+    "hossz": 110
+  },
+  {
+    "fkod": 144,
+    "filmcim": "A vándorló palota",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "japán",
+    "mufaj": "animációs",
+    "hossz": 119
+  },
+  {
+    "fkod": 145,
+    "filmcim": "Vera Drake",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "angol-francia-új-zélandi",
+    "mufaj": "dráma",
+    "hossz": 124
+  },
+  {
+    "fkod": 146,
+    "filmcim": "Világok arca: Baraka",
+    "szines": true,
+    "szinkron": "szöveg nélküli",
+    "szarmazas": "amerikai",
+    "mufaj": "dokumentum",
+    "hossz": 96
+  },
+  {
+    "fkod": 147,
+    "filmcim": "Vincent, François, Paul és a többiek",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "francia-olasz",
+    "mufaj": "dráma",
+    "hossz": 120
+  },
+  {
+    "fkod": 148,
+    "filmcim": "Vízcseppek a forró kövön",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "francia",
+    "mufaj": "dráma",
+    "hossz": 90
+  },
+  {
+    "fkod": 149,
+    "filmcim": "Vuk",
+    "szines": true,
+    "szinkron": "",
+    "szarmazas": "magyar",
+    "mufaj": "rajzfilm",
+    "hossz": 74
+  },
+  {
+    "fkod": 150,
+    "filmcim": "Wallace & Gromit és az Elvetemült Veteménylény",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "angol",
+    "mufaj": "animációs",
+    "hossz": 94
+  },
+  {
+    "fkod": 151,
+    "filmcim": "Waterloo Bridge",
+    "szines": false,
+    "szinkron": "fel",
+    "szarmazas": "amerikai",
+    "mufaj": "dráma",
+    "hossz": 103
+  },
+  {
+    "fkod": 152,
+    "filmcim": "Whisky",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "uruguayi-argentin-német-spanyol",
+    "mufaj": "komédia",
+    "hossz": 99
+  },
+  {
+    "fkod": 153,
+    "filmcim": "Zorro legendája",
+    "szines": true,
+    "szinkron": "mb",
+    "szarmazas": "amerikai",
+    "mufaj": "kalandfilm",
+    "hossz": 131
+  },
+  {
+    "fkod": 154,
+    "filmcim": "5x2",
+    "szines": true,
+    "szinkron": "fel",
+    "szarmazas": "francia",
+    "mufaj": "dráma",
+    "hossz": 90
+  }
+]
