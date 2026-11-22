@@ -69,4 +69,23 @@ exports.logout = (req, res) => {
     req.session.destroy(() => { res.redirect("/"); });
 };
 
-exports.diagram = (req, res) => { res.render("diagram"); };
+exports.diagram = async (req, res) => {
+    try {
+        const mozik = await Mozi.find({});
+        const helyek = await Hely.find({});
+
+        const diagramAdatok = mozik.map(mozi => {
+            const darab = helyek.filter(hely => hely.moziazon === mozi.moziazon).length;
+            return {
+                mozinev: mozi.mozinev,
+                filmek_count: darab
+            };
+        });
+
+        res.render("diagram", { diagramAdatok });
+    } catch (error) {
+        console.error(error);
+        req.session.message = "Hiba történt a lekérdezésnél.";
+        res.render("diagram");
+    }
+};
