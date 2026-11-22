@@ -1,8 +1,11 @@
 <%- include("partials/header") %>
 <div id="main">
 	<div class="inner">
-        
-
+        <% if(message) { %>
+            <h2><%= message %></h2>
+            <% if(user && user.role == "admin") { %> <h2>Üdvözöllek Admin !</h2> <% } else if (user) { %>
+            <h2>Üdvözöllek <%= user.username %>!</h2> <% } %>
+        <% } %>
         <h2>Web 2 labor beadandó</h2>
         <p>A feladat a 2-04-Moziműsor-3 táblás adatbázis alapján a feladat kiírás szerint valósítja meg a feladatot.
         A web oldal kiinduló struktúráját a feladat kiírás alapján a megoldások mappából felhasznált 07-08-Authentication Laravel rendszer alkotja.
