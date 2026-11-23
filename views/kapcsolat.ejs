@@ -1,0 +1,36 @@
+<%- include("partials/header") %>
+<div id="main">
+    <div class="inner">
+        <h1>Kapcsolat</h1>
+        <% if (message) { %><h2><%= message %></h2><% } %>
+
+        <form method="POST" action="/kapcsolat" novalidate>
+            <div class="fields">
+                <div class="field half">
+                    <label for="nev">Név</label>
+                    <input type="text" name="nev" id="nev" value="<%= adatok.nev || '' %>">
+                    <% if (hibak.nev) { %><span style="color:red"><%= hibak.nev.message %></span><% } %>
+                </div>
+                <div class="field half">
+                    <label for="email">Email cím</label>
+                    <input type="text" name="email" id="email" value="<%= adatok.email || '' %>">
+                    <% if (hibak.email) { %><span style="color:red"><%= hibak.email.message %></span><% } %>
+                </div>
+                <div class="field">
+                    <label for="targy">Tárgy</label>
+                    <input type="text" name="targy" id="targy" value="<%= adatok.targy || '' %>">
+                    <% if (hibak.targy) { %><span style="color:red"><%= hibak.targy.message %></span><% } %>
+                </div>
+                <div class="field">
+                    <label for="uzenet">Üzenet</label>
+                    <textarea name="uzenet" id="uzenet" rows="6"><%= adatok.uzenet || '' %></textarea>
+                    <% if (hibak.uzenet) { %><span style="color:red"><%= hibak.uzenet.message %></span><% } %>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Küldés" class="primary"></li>
+            </ul>
+        </form>
+    </div>
+</div>
+<%- include("partials/footer") %>
