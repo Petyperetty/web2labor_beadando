@@ -1,0 +1,31 @@
+<%- include("partials/header") %>
+<div id="main">
+    <div class="inner">
+        <h1>Üzenetek</h1>
+        <% if (message) { %><h2><%= message %></h2><% } %>
+
+        <% if (uzenetek.length === 0) { %>
+            <p>Még nem érkezett üzenet.</p>
+        <% } else { %>
+            <div class="table-wrapper">
+                <table class="alt">
+                    <thead>
+                        <tr><th>Küldve</th><th>Név</th><th>E-mail</th><th>Tárgy</th><th>Üzenet</th></tr>
+                    </thead>
+                    <tbody>
+                        <% uzenetek.forEach(u => { %>
+                            <tr>
+                                <td><%= u.createdAt.toLocaleString("hu-HU", { timeZone: "Europe/Budapest" }) %></td>
+                                <td><%= u.nev %></td>
+                                <td><%= u.email %></td>
+                                <td><%= u.targy %></td>
+                                <td><%= u.uzenet %></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        <% } %>
+    </div>
+</div>
+<%- include("partials/footer") %>

@@ -27,3 +27,7 @@ exports.kapcsolatPost = async (req, res) => {
         res.redirect("/kapcsolat");
     }
 };
+exports.uzenetekGet = async (req, res) => {
+    const uzenetek = await Uzenet.find().sort({ createdAt: -1 });
+    res.render("uzenetek", { uzenetek });
+};

@@ -32,15 +32,15 @@
 							<li><a href="/">Főoldal</a></li>
 							<li><a href="/mozik">Mozik listája</a></li>
 							<li><a href="/diagram">Diagram</a></li>
-							<li><a href="/kapcsolat">Kapcsolat</a></li>							
+							<li><a href="/kapcsolat">Kapcsolat</a></li>					
 							<% if(!user) { %>
 							<li><a href="/login">Bejelentkezés</a></li>
 							<li><a href="/register">Regisztráció</a></li>
 							<% } %>
 							<% if (user) { %>
 								<li><a href="/logout">Kijelentkezés</a></li>
+								<li><a href="/uzenetek">Üzenetek</a></li>
 								<% if(user.role == "admin") { %>
-									<li><a href="/uzenetek">Üzenetek</a></li>
 									<li><a href="/crud">CRUD</a></li>
 								<% } %>
 							<% }%>
