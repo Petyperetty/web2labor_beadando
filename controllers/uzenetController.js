@@ -31,3 +31,13 @@ exports.uzenetekGet = async (req, res) => {
     const uzenetek = await Uzenet.find().sort({ createdAt: -1 });
     res.render("uzenetek", { uzenetek });
 };
+exports.uzenetTorles = async (req, res) => {
+    try {
+        await Uzenet.findByIdAndDelete(req.params.id);
+        req.session.message = "Az üzenet törölve.";
+    } catch (err) {
+        console.error(err);
+        req.session.message = "Nem sikerült törölni az üzenetet.";
+    }
+    res.redirect("/uzenetek");
+};

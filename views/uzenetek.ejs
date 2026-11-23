@@ -10,7 +10,7 @@
             <div class="table-wrapper">
                 <table class="alt">
                     <thead>
-                        <tr><th>Küldve</th><th>Név</th><th>E-mail</th><th>Tárgy</th><th>Üzenet</th></tr>
+                        <tr><th>Küldve</th><th>Név</th><th>E-mail</th><th>Tárgy</th><th>Üzenet</th><% if (user.role === "admin") { %><th></th><% } %></tr>
                     </thead>
                     <tbody>
                         <% uzenetek.forEach(u => { %>
@@ -19,7 +19,14 @@
                                 <td><%= u.nev %></td>
                                 <td><%= u.email %></td>
                                 <td><%= u.targy %></td>
-                                <td><%= u.uzenet %></td>
+                                <td><%= u.uzenet %></td> 
+                                <% if (user.role === "admin") { %>
+                                    <td>
+                                        <form method="POST" action="/uzenetek/<%= u._id %>/torles" onsubmit="return confirm('Biztosan törlöd ezt az üzenetet?')">
+                                            <button type="submit" class="button small primary" style="background-color:#d9534f;">Törlés</button>
+                                        </form>
+                                    </td>
+                                <% } %>
                             </tr>
                         <% }) %>
                     </tbody>

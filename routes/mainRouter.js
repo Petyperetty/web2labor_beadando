@@ -15,5 +15,6 @@ router.get("/diagram", controller.diagram);
 router.get("/kapcsolat", uzenetController.kapcsolatGet);
 router.post("/kapcsolat", uzenetController.kapcsolatPost);
 router.get("/uzenetek", isLoggedIn, uzenetController.uzenetekGet);
+router.post("/uzenetek/:id/torles", isAdmin, uzenetController.uzenetTorles);
 
 module.exports = router;
