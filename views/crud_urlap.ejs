@@ -1,0 +1,58 @@
+<%- include("partials/header") %>
+<div id="main">
+    <div class="inner">
+        <h1><%= cim %></h1>
+        <% if (message) { %><h2><%= message %></h2><% } %>
+
+        <form method="POST" action="<%= action %>" novalidate>
+            <div class="fields">
+                <div class="field">
+                    <label for="filmcim">Cím</label>
+                    <input type="text" name="filmcim" id="filmcim" value="<%= adatok.filmcim || '' %>">
+                    <% if (hibak.filmcim) { %><span style="color:red"><%= hibak.filmcim.message %></span><% } %>
+                </div>
+                <div class="field half">
+                    <label for="mufaj">Műfaj</label>
+                    <select name="mufaj" id="mufaj">
+                        <option value="">– válassz műfajt –</option>
+                        <% mufajok.forEach(m => { %>
+                            <option value="<%= m %>" <%= adatok.mufaj === m ? "selected" : "" %>><%= m %></option>
+                        <% }) %>
+                    </select>
+                    <% if (hibak.mufaj) { %><span style="color:red"><%= hibak.mufaj.message %></span><% } %>
+                </div>
+                <div class="field half">
+                    <label for="szarmazas">Származás</label>
+                    <input type="text" name="szarmazas" id="szarmazas" list="szarmazasLista" value="<%= adatok.szarmazas || '' %>">
+                    <datalist id="szarmazasLista">
+                        <% szarmazasok.forEach(s => { %><option value="<%= s %>"><% }) %>
+                    </datalist>
+                    <% if (hibak.szarmazas) { %><span style="color:red"><%= hibak.szarmazas.message %></span><% } %>
+                </div>
+                <div class="field half">
+                    <label for="hossz">Hossz (perc)</label>
+                    <input type="number" name="hossz" id="hossz" value="<%= adatok.hossz || '' %>">
+                    <% if (hibak.hossz) { %><span style="color:red"><%= hibak.hossz.message %></span><% } %>
+                </div>
+                <div class="field half">
+                    <label for="szinkron">Szinkron</label>
+                    <select name="szinkron" id="szinkron">
+                        <option value="">– nincs megadva –</option>
+                        <option value="mb" <%= adatok.szinkron === "mb" ? "selected" : "" %>>szinkronizált (mb)</option>
+                        <option value="fel" <%= adatok.szinkron === "fel" ? "selected" : "" %>>feliratos</option>
+                        <option value="szöveg nélküli" <%= adatok.szinkron === "szöveg nélküli" ? "selected" : "" %>>szöveg nélküli</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <input type="checkbox" name="szines" id="szines" <%= adatok.szines ? "checked" : "" %>>
+                    <label for="szines">Színes film</label>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Mentés" class="primary"></li>
+                <li><a href="/crud" class="button">Mégse</a></li>
+            </ul>
+        </form>
+    </div>
+</div>
+<%- include("partials/footer") %>

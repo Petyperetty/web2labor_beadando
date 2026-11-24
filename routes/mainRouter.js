@@ -18,5 +18,7 @@ router.post("/kapcsolat", uzenetController.kapcsolatPost);
 router.get("/uzenetek", isLoggedIn, uzenetController.uzenetekGet);
 router.post("/uzenetek/:id/torles", isAdmin, uzenetController.uzenetTorles);
 router.get("/crud", isAdmin, crudController.lista);
+router.get("/crud/uj", isAdmin, crudController.ujGet);
+router.post("/crud/uj", isAdmin, crudController.ujPost);
 
 module.exports = router;

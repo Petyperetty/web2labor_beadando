@@ -7,7 +7,28 @@
         <ul class="actions">
             <li><a href="/crud/uj" class="button primary">Új film hozzáadása</a></li>
         </ul>
-
+        <form method="GET" action="/crud">
+            <div class="fields">
+                <div class="field half">
+                    <label for="q">Keresés címre</label>
+                    <input type="text" name="q" id="q" value="<%= q %>">
+                </div>
+                <div class="field half">
+                    <label for="mufajSzuro">Műfaj</label>
+                    <select name="mufaj" id="mufajSzuro">
+                        <option value="">– összes –</option>
+                        <% mufajok.forEach(m => { %>
+                            <option value="<%= m %>" <%= m === mufaj ? "selected" : "" %>><%= m %></option>
+                        <% }) %>
+                    </select>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Szűrés" class="primary"></li>
+                <li><a href="/crud" class="button">Összes</a></li>
+            </ul>
+        </form>
+        <p>Találatok: <%= filmek.length %> film</p>
         <div class="table-wrapper">
             <table class="alt">
                 <thead>
