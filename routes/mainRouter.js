@@ -20,5 +20,8 @@ router.post("/uzenetek/:id/torles", isAdmin, uzenetController.uzenetTorles);
 router.get("/crud", isAdmin, crudController.lista);
 router.get("/crud/uj", isAdmin, crudController.ujGet);
 router.post("/crud/uj", isAdmin, crudController.ujPost);
+router.get("/crud/:id/szerkeszt", isAdmin, crudController.szerkesztGet);
+router.post("/crud/:id/szerkeszt", isAdmin, crudController.szerkesztPost);
+router.post("/crud/:id/torles", isAdmin, crudController.torles);
 
 module.exports = router;

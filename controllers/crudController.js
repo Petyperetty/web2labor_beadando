@@ -1,4 +1,5 @@
 const Film = require("../models/film");
+const Hely = require("../models/hely");
 
 async function listak() {
     const rendez = (t) => t.filter(x => x).sort((a, b) => a.localeCompare(b, "hu"));
@@ -55,4 +56,70 @@ exports.ujPost = async (req, res) => {
         req.session.message = "Hiba történt, próbáld újra később!";
         res.redirect("/crud");
     }
+    
+};
+exports.szerkesztGet = async (req, res) => {
+    try {
+        const film = await Film.findById(req.params.id);
+        if (!film) {
+            req.session.message = "A film nem található.";
+            return res.redirect("/crud");
+        }
+        res.render("crud_urlap", {
+            cim: "Film szerkesztése", action: `/crud/${film._id}/szerkeszt`,
+            adatok: film, hibak: {}, ...(await listak())
+        });
+    } catch (err) {
+        console.error(err);
+        req.session.message = "A film nem található.";
+        res.redirect("/crud");
+    }
+};
+
+exports.szerkesztPost = async (req, res) => {
+    const adatok = {
+        filmcim: req.body.filmcim,
+        mufaj: req.body.mufaj,
+        szarmazas: req.body.szarmazas,
+        hossz: req.body.hossz,
+        szinkron: req.body.szinkron,
+        szines: req.body.szines === "on"
+    };
+    try {
+        const film = await Film.findById(req.params.id);
+        if (!film) {
+            req.session.message = "A film nem található.";
+            return res.redirect("/crud");
+        }
+        film.set(adatok);
+        await film.save();
+        req.session.message = "A film módosítva.";
+        res.redirect("/crud");
+    } catch (err) {
+        if (err.name === "ValidationError") {
+            return res.render("crud_urlap", {
+                cim: "Film szerkesztése", action: `/crud/${req.params.id}/szerkeszt`,
+                adatok, hibak: err.errors, message: "Sikertelen mentés!", ...(await listak())
+            });
+        }
+        console.error(err);
+        req.session.message = "Hiba történt, próbáld újra később!";
+        res.redirect("/crud");
+    }
+};
+
+exports.torles = async (req, res) => {
+    try {
+        const film = await Film.findByIdAndDelete(req.params.id);
+        if (film) {
+            await Hely.deleteMany({ fkod: film.fkod });
+            req.session.message = `A(z) „${film.filmcim}” film törölve.`;
+        } else {
+            req.session.message = "A film nem található.";
+        }
+    } catch (err) {
+        console.error(err);
+        req.session.message = "Nem sikerült törölni a filmet.";
+    }
+    res.redirect("/crud");
 };
