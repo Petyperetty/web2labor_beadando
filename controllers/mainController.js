@@ -15,14 +15,15 @@ exports.allMozi = async (req, res) => {
 
 exports.allFilm = async (req, res) => {
     const moziazon = req.params.moziazon;
-    console.log(moziazon);
     const hely = await Hely.find({moziazon});
-    console.log(hely);
     const filmKodok = hely.map( (filmek) => filmek.fkod );
-    console.log(filmKodok);
-    const filmek = await Film.find({fkod:{$in:filmKodok}}); 
-    console.log(filmek);
-    return res.render("filmek", {filmek});
+    const filmek = await Film.find({fkod:{$in:filmKodok}});
+    if(filmek.length == 0) { 
+        req.session.message = "Ebben a moziban nem játszottak filmet.";
+        res.redirect("/mozik");
+    }
+    else
+        return res.render("filmek", {filmek});
 };
 
 exports.registerGet = (req, res) => { res.render("register"); };

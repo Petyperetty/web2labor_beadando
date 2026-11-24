@@ -1,11 +1,14 @@
 <%- include("partials/header") %>
 <div id="main">
 	<div class="inner">
+        <% if(message) { %>
+                <h2><%= message %></h2> <% } %>
+                
         <section class="tiles">
             <% allMozik.forEach( mozi => { %>
                 <article class="style3">
                     <span class="image">
-                        <img src="https://placehold.co/300"></img>
+                        <img src="/img/fuggony.jpeg"></img>
                     </span>                
                     <a href="/filmek/<%= mozi.moziazon %>">
                         <h2><%= mozi.mozinev %></h2>
