@@ -1,0 +1,76 @@
+<%- include("partials/header") %>
+<style>
+    button.kapcsolo,
+    button.kapcsolo:hover,
+    button.kapcsolo:active {
+        position: relative;
+        width: 3.2em;
+        height: 1.8em;
+        padding: 0;
+        font-size: 1em;
+        border-radius: 1em;
+        background-color: #c9c9c9;
+        box-shadow: none;
+        vertical-align: middle;
+    }
+    button.kapcsolo::after {
+        content: "";
+        position: absolute;
+        top: 0.2em;
+        left: 0.2em;
+        width: 1.4em;
+        height: 1.4em;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    button.kapcsolo.be,
+    button.kapcsolo.be:hover,
+    button.kapcsolo.be:active { background-color: #5cb85c; }
+    button.kapcsolo.be::after { left: 1.6em; }
+    button.kapcsolo:disabled { opacity: 0.5; cursor: not-allowed; pointer-events: auto; }
+    td form { margin: 0; }
+</style>
+<div id="main">
+    <div class="inner">
+        <h1>Felhasználók</h1>
+        <% if (message) { %><h2><%= message %></h2><% } %>
+        <div class="table-wrapper">
+            <table class="alt">
+                <thead>
+                    <tr><th>Felhasználónév</th><th>E-mail</th><th>Admin</th><th></th></tr>
+                </thead>
+                <tbody>
+                    <% felhasznalok.forEach(f => {
+                         const sajat = f.username === user.username;
+                         const admin = f.role === "admin"; %>
+                        <tr>
+                            <td><%= f.username %><%= sajat ? " (te)" : "" %></td>
+                            <td><%= f.email %></td>
+                            <td>
+                                <% if (sajat) { %>
+                                    <button class="kapcsolo <%= admin ? "be" : "" %>" disabled
+                                            title="A saját szerepkörödet nem módosíthatod"></button>
+                                <% } else { %>
+                                    <form method="POST" action="/felhasznalok/<%= f._id %>/szerepkor">
+                                        <button type="submit"
+                                                class="kapcsolo <%= admin ? "be" : "" %>"
+                                                role="switch" aria-checked="<%= admin %>"
+                                                title="<%= admin ? "Legyen felhasználó" : "Legyen admin" %>"></button>
+                                    </form>
+                                <% } %>
+                            </td>
+                            <td>
+                                <% if (!sajat) { %>
+                                    <form method="POST" action="/felhasznalok/<%= f._id %>/torles" onsubmit="return confirm('Biztosan törlöd ezt a felhasználót?')">
+                                        <button type="submit" class="button small primary" style="background-color:#d9534f;">Törlés</button>
+                                    </form>
+                                <% } %>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer") %>

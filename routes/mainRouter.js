@@ -3,6 +3,7 @@ const controller = require("../controllers/mainController");
 const uzenetController = require("../controllers/uzenetController");
 const { isLoggedIn, isAdmin } = require("../middleware/auth");
 const crudController = require("../controllers/crudController");
+const felhasznaloController = require("../controllers/felhasznaloController");
 
 router.get("/", controller.homeIndex);
 router.get("/register", controller.registerGet);
@@ -23,5 +24,8 @@ router.post("/crud/uj", isAdmin, crudController.ujPost);
 router.get("/crud/:id/szerkeszt", isAdmin, crudController.szerkesztGet);
 router.post("/crud/:id/szerkeszt", isAdmin, crudController.szerkesztPost);
 router.post("/crud/:id/torles", isAdmin, crudController.torles);
+router.get("/felhasznalok", isAdmin, felhasznaloController.lista);
+router.post("/felhasznalok/:id/szerepkor", isAdmin, felhasznaloController.szerepkorValtas);
+router.post("/felhasznalok/:id/torles", isAdmin, felhasznaloController.torles);
 
 module.exports = router;
