@@ -1,0 +1,38 @@
+<%- include("partials/header") %>
+<div id="main">
+    <div class="inner">
+        <h1>Filmek kezelése</h1>
+        <% if (message) { %><h2><%= message %></h2><% } %>
+
+        <ul class="actions">
+            <li><a href="/crud/uj" class="button primary">Új film hozzáadása</a></li>
+        </ul>
+
+        <div class="table-wrapper">
+            <table class="alt">
+                <thead>
+                    <tr><th>Kód</th><th>Cím</th><th>Műfaj</th><th>Származás</th><th>Hossz</th><th>Színes</th><th></th><th></th></tr>
+                </thead>
+                <tbody>
+                    <% filmek.forEach(f => { %>
+                        <tr>
+                            <td><%= f.fkod %></td>
+                            <td><%= f.filmcim %></td>
+                            <td><%= f.mufaj %></td>
+                            <td><%= f.szarmazas %></td>
+                            <td><%= f.hossz %> perc</td>
+                            <td><%= f.szines ? "igen" : "nem" %></td>
+                            <td><a href="/crud/<%= f._id %>/szerkeszt" class="button small">Szerkesztés</a></td>
+                            <td>
+                                <form method="POST" action="/crud/<%= f._id %>/torles" onsubmit="return confirm('Biztosan törlöd ezt a filmet?')">
+                                    <button type="submit" class="button small primary" style="background-color:#d9534f;">Törlés</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer") %>
