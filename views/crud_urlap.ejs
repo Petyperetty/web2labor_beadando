@@ -43,6 +43,18 @@
                         <option value="szöveg nélküli" <%= adatok.szinkron === "szöveg nélküli" ? "selected" : "" %>>szöveg nélküli</option>
                     </select>
                 </div>
+                <% if (action === "/crud/uj") { %>
+                    <div class="field">
+                        <label for="moziazon">Melyik moziban vetítik?</label>
+                        <select name="moziazon" id="moziazon">
+                            <option value="">– válassz mozit –</option>
+                            <% mozik.forEach(m => { %>
+                                <option value="<%= m.moziazon %>" <%= adatok.moziazon === m.moziazon ? "selected" : "" %>><%= m.mozinev %></option>
+                            <% }) %>
+                        </select>
+                        <% if (hibak.moziazon) { %><span style="color:red"><%= hibak.moziazon.message %></span><% } %>
+                    </div>
+                <% } %>
                 <div class="field">
                     <input type="checkbox" name="szines" id="szines" <%= adatok.szines ? "checked" : "" %>>
                     <label for="szines">Színes film</label>

@@ -1,11 +1,13 @@
 const Film = require("../models/film");
 const Hely = require("../models/hely");
+const Mozi = require("../models/mozi");
 
 async function listak() {
     const rendez = (t) => t.filter(x => x).sort((a, b) => a.localeCompare(b, "hu"));
     return {
         mufajok: rendez(await Film.distinct("mufaj")),
-        szarmazasok: rendez(await Film.distinct("szarmazas"))
+        szarmazasok: rendez(await Film.distinct("szarmazas")),
+        mozik: (await Mozi.find()).sort((a, b) => a.mozinev.localeCompare(b.mozinev, "hu"))
     };
 }
 
@@ -37,26 +39,40 @@ exports.ujPost = async (req, res) => {
         szarmazas: req.body.szarmazas,
         hossz: req.body.hossz,
         szinkron: req.body.szinkron,
-        szines: req.body.szines === "on"
+        szines: req.body.szines === "on",
+        moziazon: parseInt(req.body.moziazon)
     };
     try {
-        const utolso = await Film.findOne().sort({ fkod: -1 });
-        adatok.fkod = utolso ? utolso.fkod + 1 : 1;
-        await Film.create(adatok);
-        req.session.message = "A film hozzáadva.";
-        res.redirect("/crud");
-    } catch (err) {
-        if (err.name === "ValidationError") {
+        const mozi = adatok.moziazon ? await Mozi.findOne({ moziazon: adatok.moziazon }) : null;
+
+        const film = new Film(adatok);
+        const ellenorzes = film.validateSync();
+        const hibak = ellenorzes ? ellenorzes.errors : {};
+        if (!mozi) {
+            hibak.moziazon = { message: "Válaszd ki, melyik moziban vetítik!" };
+        }
+        if (Object.keys(hibak).length > 0) {
             return res.render("crud_urlap", {
                 cim: "Új film hozzáadása", action: "/crud/uj",
-                adatok, hibak: err.errors, message: "Sikertelen mentés!", ...(await listak())
+                adatok, hibak, message: "Sikertelen mentés!", ...(await listak())
             });
         }
+
+        const utolso = await Film.findOne().sort({ fkod: -1 });
+        film.fkod = utolso ? utolso.fkod + 1 : 1;
+        await film.save();
+        await Hely.create({
+            fkod: film.fkod,
+            moziazon: mozi.moziazon
+        });
+
+        req.session.message = `A film hozzáadva, vetíti: ${mozi.mozinev}.`;
+        res.redirect("/crud");
+    } catch (err) {
         console.error(err);
         req.session.message = "Hiba történt, próbáld újra később!";
         res.redirect("/crud");
     }
-    
 };
 exports.szerkesztGet = async (req, res) => {
     try {
